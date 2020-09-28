@@ -1,0 +1,5 @@
+<div>
+  {{user?.id}}-{{user?.name}}-{{user?.email}}
+  <button [routerLink]="['post', user.id]" [state]="{user: user}">post this user</button>
+  <hr>
+</div>
